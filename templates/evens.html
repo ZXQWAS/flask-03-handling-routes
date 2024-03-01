@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Evens</title>
+</head>
+<body>
+    <h1>Showing Even Number from 1 to 10</h1>
+    
+    <!-- This line shows name, html comment -->
+    {# Jinja template comment #}
+    <p>My name is {{ name | title }}</p>   
+
+    <ul>
+     {% for x in range(1,11) %}
+        {% if x % 2 == 0 %}
+        <li><h1>Number {{ x }} is even</h1></li>
+        {% endif %}
+     {% endfor %}
+    </ul>
+</body>
+</html>
